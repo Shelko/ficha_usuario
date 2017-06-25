@@ -1,0 +1,217 @@
+html, body {
+  margin: 0;
+}
+
+.curr_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.personal {
+  width: 250px;
+  order: 2;
+  box-shadow: -10px 0 5px -2px #888;
+  background-color: whitesmoke;
+  .personal__header {
+    flex: 1;
+    .header__foto {
+      width: 100%;
+      //padding: 20px 10px 20px 10px;
+      img {
+        width: 100%;
+        //border-radius: 50%;
+      }
+    }
+    .header__datos {
+      .datos__informacion {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        height: 50px;
+        .informacion__icono {
+          padding: 5px 5px 0px 5px;
+          text-align: center;
+          font-size: x-large;
+          &--direccion {
+            background: linear-gradient(to right, #808080, #333333);
+          }
+          &--telefono {
+            background: linear-gradient(to right, #8b0000, #420000);
+          }
+          &--movil {
+            background: linear-gradient(to right, #990000, #520000);
+            //shadow #330000
+          }
+          &--pais {
+            background: linear-gradient(to right, #333333, #1a1a1a);
+          }
+          &--provincia {
+            background: linear-gradient(to right, #4d4d4d, #1a1a1a);
+          }
+          &--municipio {
+            background: linear-gradient(to right, #666666, #1a1a1a);
+          }
+          &--email {
+            background: linear-gradient(to right, #63b5cf, #246175);
+          }
+          .glyphicon-ring {
+            width: 39px;
+            border-radius: 50%;
+            color: white;
+            background-color: white;
+            display: inline-table;
+            text-align: center;
+            .glyphicon {
+              margin-top: 7px;
+            }
+            .glyphicon--pais {
+              color: #333333;
+            }
+            .glyphicon--provincia {
+              color: #4d4d4d;
+            }
+            .glyphicon--municipio {
+              color: #666666;
+            }
+            .glyphicon--direccion {
+              color: #808080;
+            }
+            .glyphicon--telefono {
+              color: #8b0000;
+            }
+            .glyphicon--movil {
+              color: #990000;
+            }
+            .glyphicon--email {
+              color: #63b5cf;
+            }
+          }
+        }
+        .informacion__contenido {
+          color: white;
+          font-weight: bold;
+          padding: 15px 10px 0 20px;
+          font-size: small;
+          p {
+            margin: 0;
+          }
+          &--direccion {
+            background-color: #808080;
+          }
+          &--telefono {
+            background-color: #8b0000;
+          }
+          &--movil {
+            background-color: #990000;
+            //shadow #330000
+          }
+          &--pais {
+            background-color: #333333;
+          }
+          &--provincia {
+            background-color: #4d4d4d;
+          }
+          &--municipio {
+            background-color: #666666;
+          }
+          &--email {
+            background-color: #63b5cf;
+          }
+        }
+      }
+    }
+  }
+  .personal__content {
+
+  }
+  .personal__footer {
+
+  }
+}
+
+.trabajo {
+  flex: 1;
+  order: 1;
+  background-color: gainsboro;
+  padding: 50px;
+  .trabajo__header {
+    h3 {
+      margin: 0;
+      font-weight: bold;
+      color: #999999;
+      text-align: left;
+    }
+    .header__titulo {
+      padding: 25px;
+      h1 {
+        margin: 0;
+        font-weight: bold;
+        text-align: right;
+        color: #808080;
+      }
+      h2 {
+        margin: 0;
+        margin-top: 10px;
+        text-align: right;
+        color: #8b0000;
+      }
+      h5 {
+        margin-top: 30px;
+        text-align: left;
+        font-weight: bold;
+      }
+      hr {
+        border-top: 1px solid #999999;
+      }
+    }
+  }
+  .trabajo__content {
+    padding-left: 25px;
+    padding-right: 25px;
+    h3 {
+      margin: 0;
+      font-weight: bold;
+      color: #999999;
+      text-align: left;
+    }
+    table {
+      margin-top: 20px;
+      th {
+        border-top: 1px solid #999999 !important;
+        border-left: 1px solid #999999 !important;
+        border-right: 1px solid #999999 !important;
+        border-bottom: 1px solid #999999 !important;
+      }
+      td {
+        border: 1px solid #999999;
+      }
+    }
+    hr {
+      border-top: 1px solid #999999;
+    }
+  }
+  .trabajo__footer {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding-left: 25px;
+    padding-right: 25px;
+    p {
+      margin: 0;
+      font-weight: bold;
+    }
+    span{
+      font-weight: normal;
+    }
+    .footer__fecha {
+      padding: 8px;
+      border: 1px solid #999999;
+    }
+    .footer__motivo {
+      padding: 8px;
+      border-top: 1px solid #999999;
+      border-right: 1px solid #999999;
+      border-bottom: 1px solid #999999;
+    }
+  }
+}
